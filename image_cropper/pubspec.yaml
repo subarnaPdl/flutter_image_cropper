@@ -3,6 +3,8 @@ description: A Flutter plugin for Android, iOS and Web supports cropping images
 version: 8.0.2
 homepage: https://github.com/hnvn/flutter_image_cropper
 
+publish_to: 'none'
+
 environment:
   sdk: '>=3.3.0 <4.0.0'
   flutter: '>=1.20.0'
@@ -21,8 +23,10 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  image_cropper_platform_interface: ^7.0.0
-  image_cropper_for_web: ^6.0.2
+  image_cropper_platform_interface:
+    git:
+      url: https://github.com/subarnaPdl/flutter_image_cropper.git
+      path: image_cropper_platform_interface
 
 dev_dependencies:
   flutter_test:
